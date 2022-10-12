@@ -1,1 +1,1 @@
-# Game-DBGA-Jam
+# Game DBGA Jam
