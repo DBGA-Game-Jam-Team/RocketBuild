@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Thruster : MonoBehaviour
-{
+public class Thruster : Component {
     public float XSpeed { get => xSpeed; }
     public float YSpeed { get => ySpeed; }
 

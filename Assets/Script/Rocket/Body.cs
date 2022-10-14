@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Body : MonoBehaviour
-{
+public class Body : Component {
     public int Life { get => life; }
     public int Fuel { get => fuel; }
 
