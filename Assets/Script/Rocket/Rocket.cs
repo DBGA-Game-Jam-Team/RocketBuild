@@ -36,6 +36,7 @@ public class Rocket : Singleton<Rocket>
     private Rigidbody2D rb;
     private bool launched = false;
     private bool isBlinking = false;
+    private float maxFuel;
 
     private Weapon weapon;
 
@@ -65,11 +66,13 @@ public class Rocket : Singleton<Rocket>
         life += Tip.Life;
 
         life += Body.Life;
-        fuel += Body.Fuel;
+        maxFuel += Body.Fuel;
 
         xSpeed += Thruster.XSpeed;
         ySpeed += Thruster.YSpeed;
 
+
+        fuel = maxFuel;
         foreach (GameObject g in Backgrounds) g.SetActive(false);
 
         Debug.Log("life: " + life);
@@ -190,5 +193,9 @@ public class Rocket : Singleton<Rocket>
     }
     private bool SpriteRenderersEnabled() {
         return tipSlot.GetComponent<SpriteRenderer>().enabled;
+    }
+
+    public void FillFuel(float perc) {
+        fuel += perc * maxFuel / 100;
     }
 }
