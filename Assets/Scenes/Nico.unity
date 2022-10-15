@@ -2733,6 +2733,10 @@ MonoBehaviour:
   tipSlot: {fileID: 1879256546}
   bodySlot: {fileID: 2061235191}
   thrusterSlot: {fileID: 487401765}
+  Backgrounds:
+  - {fileID: 1003964938}
+  - {fileID: 2107386705}
+  - {fileID: 1402331306}
 --- !u!54 &1991069090
 Rigidbody:
   m_ObjectHideFlags: 0

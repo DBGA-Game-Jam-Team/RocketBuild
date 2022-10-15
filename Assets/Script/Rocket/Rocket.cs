@@ -16,6 +16,9 @@ public class Rocket : Singleton<Rocket> {
     [SerializeField] private GameObject bodySlot;
     [SerializeField] private GameObject thrusterSlot;
 
+    [SerializeField] List<GameObject> Backgrounds;
+
+
     private Rigidbody rb;
     private bool launched = false;
 
@@ -47,6 +50,8 @@ public class Rocket : Singleton<Rocket> {
 
         xSpeed += Thruster.XSpeed;
         ySpeed += Thruster.YSpeed;
+
+        foreach (GameObject g in Backgrounds) g.SetActive(false);
 
         Debug.Log("life: " + life);
         Debug.Log("fuel: " + fuel);
