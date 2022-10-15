@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8d4e383b172c947ae4b647558fa8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coolDown: 2
+  coolDown: 4
   projectilePrefab: {fileID: 1980574737196335804, guid: 31698f69e4b627a4b83972c7f4587f32, type: 3}
