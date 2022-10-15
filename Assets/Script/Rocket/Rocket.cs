@@ -62,8 +62,14 @@ public class Rocket : Singleton<Rocket> {
         Debug.Log("xSpeed: " + xSpeed);
         Debug.Log("ySpeed: " + ySpeed);
 
+        //StartCoroutine(LaunchCor());
+
         launched = true;
     }
+
+    //private IEnumerator LaunchCor() {
+    //    yield 
+    //}
 
     public bool ReadyToLaunch() {
         return Tip != null && Body != null && Thruster != null;
