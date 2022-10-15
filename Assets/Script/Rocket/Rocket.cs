@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rocket : Singleton<Rocket> {
+public class Rocket : Singleton<Rocket> 
+{
+    public int Life { get => life; }
     public Tip Tip { get; private set; } = null;
     public Body Body { get; private set; } = null;
     public Thruster Thruster { get; private set; } = null;
@@ -71,6 +73,7 @@ public class Rocket : Singleton<Rocket> {
         yield return new WaitForSeconds(3);
         CamerasManager.Instance.EnableGameCamera();
         launched = true;
+        UIManager.Instance.ShowGameInfoPanel(true);
     }
 
     public bool ReadyToLaunch() {
