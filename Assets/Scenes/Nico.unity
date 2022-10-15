@@ -584,7 +584,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1796,7 +1796,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1953,9 +1953,9 @@ MonoBehaviour:
   xSpeed: 0
   fuel: 0
   life: 0
-  tipSlot: {fileID: 0}
-  bodySlot: {fileID: 0}
-  thrusterSlot: {fileID: 0}
+  tipSlot: {fileID: 1879256546}
+  bodySlot: {fileID: 2061235191}
+  thrusterSlot: {fileID: 487401765}
 --- !u!1 &2011734267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,9 +2090,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
-  m_Color: {r: 0, g: 0.22272372, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
