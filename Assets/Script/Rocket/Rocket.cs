@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Rocket : Singleton<Rocket> {
 
-    [SerializeField] private float ySpeed;
-    [SerializeField] private float xSpeed;
-    [SerializeField] private int fuel;
-    [SerializeField] private int life;
+    [SerializeField] private float ySpeed = 0f;
+    [SerializeField] private float xSpeed = 0f;
+    [SerializeField] private float fuel = 0f;
+    [SerializeField] private int life = 0;
 
     [SerializeField] private GameObject tipSlot;
     [SerializeField] private GameObject bodySlot;
@@ -35,4 +35,13 @@ public class Rocket : Singleton<Rocket> {
         thrusterSlot.GetComponent<SpriteRenderer>().sprite = thruster.ComponenetSprite;
     }
 
+    public void Launch() {
+        life += Tip.Life;
+
+        life += Body.Life;
+        fuel += Body.Fuel;
+
+        xSpeed += Thruster.XSpeed;
+        ySpeed += Thruster.YSpeed;
+    }
 }
