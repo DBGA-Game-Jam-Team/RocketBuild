@@ -4073,8 +4073,8 @@ MonoBehaviour:
   xSpeed: 0
   fuel: 0
   life: 0
-  fuelDecrementSeconds: 1
-  fuelDecrementAmount: 1
+  fuelDecrementSeconds: 0.1
+  fuelDecrementAmount: 0.1
   tipSlot: {fileID: 1879256546}
   bodySlot: {fileID: 2061235191}
   thrusterSlot: {fileID: 487401765}
