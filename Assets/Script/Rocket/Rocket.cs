@@ -6,6 +6,7 @@ public class Rocket : Singleton<Rocket>
 {
     public int Life { get => life; }
     public float Fuel { get => fuel; }
+    public float YSpeed { get => ySpeed; }
 
     public Tip Tip { get; private set; } = null;
     public Body Body { get; private set; } = null;
