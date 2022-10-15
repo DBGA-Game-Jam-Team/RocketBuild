@@ -5,6 +5,8 @@ using UnityEngine;
 public class Rocket : Singleton<Rocket> 
 {
     public int Life { get => life; }
+    public float Fuel { get => fuel; }
+
     public Tip Tip { get; private set; } = null;
     public Body Body { get; private set; } = null;
     public Thruster Thruster { get; private set; } = null;

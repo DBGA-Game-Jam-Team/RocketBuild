@@ -8,9 +8,12 @@ public class FuelUI : MonoBehaviour
     [SerializeField]
     private Slider slider;
 
+    private float maxFuel;
+
     private void Start()
     {
         slider.value = 1;
+        //maxFuel = Rocket.Instance.
     }
 
     private void Update()
