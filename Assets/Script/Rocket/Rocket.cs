@@ -43,5 +43,10 @@ public class Rocket : Singleton<Rocket> {
 
         xSpeed += Thruster.XSpeed;
         ySpeed += Thruster.YSpeed;
+
+        Debug.Log("life: " + life);
+        Debug.Log("fuel: " + fuel);
+        Debug.Log("xSpeed: " + xSpeed);
+        Debug.Log("ySpeed: "+ ySpeed);
     }
 }

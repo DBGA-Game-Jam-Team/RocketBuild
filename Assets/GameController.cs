@@ -6,5 +6,6 @@ public class GameController : Singleton<GameController>
 {
     public void StartLaunch() {
         Rocket.Instance.Launch();
+        UIManager.Instance.ShowBuildPanel(false);
     }
 }
