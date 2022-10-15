@@ -26,6 +26,6 @@ public class UIManager : Singleton<UIManager>
     }
 
     public void ShowDistance(int distance) {
-        distanceText.text=distance.ToString();
+        distanceText.text = distance.ToString();
     }
 }

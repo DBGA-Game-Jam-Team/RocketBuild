@@ -94,6 +94,7 @@ public class Rocket : Singleton<Rocket>
 
             HandleSpeed();
             HandleShooting();
+            UpdateDistance();
         }
     }
 
@@ -128,5 +129,8 @@ public class Rocket : Singleton<Rocket>
         }
         Debug.Log("GAMEOVER FUEL EMPTY");
         // TO - DO: GameManager.instance.GameOver();
+    }
+    private void UpdateDistance() {
+        UIManager.Instance.ShowDistance((int)(transform.position.y*10));
     }
 }
