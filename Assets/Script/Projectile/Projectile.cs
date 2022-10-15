@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public abstract class Projectile : MonoBehaviour
 {
     [SerializeField] float speed;
 
@@ -14,5 +14,7 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected virtual void OnHit(Collision2D collision) { }
+    protected virtual void OnHit(Collision2D collision) { 
+    
+    }
 }
