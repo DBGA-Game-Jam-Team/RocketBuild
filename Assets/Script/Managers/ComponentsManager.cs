@@ -22,13 +22,13 @@ public class ComponentsManager : Singleton<ComponentsManager>
 
         for (int i = 0; i < bodies.Count; i++) {
             bodies[i].ID = i;
-            ComponentUI btn = Instantiate(ComponentUiPref, tipsPanel.transform).GetComponent<ComponentUI>();
+            ComponentUI btn = Instantiate(ComponentUiPref, bodyPanel.transform).GetComponent<ComponentUI>();
             btn.SetComponentUI(bodies[i]);
         }
 
         for (int i = 0; i < thrusters.Count; i++) {
             thrusters[i].ID = i;
-            ComponentUI btn = Instantiate(ComponentUiPref, tipsPanel.transform).GetComponent<ComponentUI>();
+            ComponentUI btn = Instantiate(ComponentUiPref, thrustersPanel.transform).GetComponent<ComponentUI>();
             btn.SetComponentUI(thrusters[i]);
         }
     }

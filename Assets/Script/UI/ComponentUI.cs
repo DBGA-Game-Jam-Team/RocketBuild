@@ -7,8 +7,9 @@ public class ComponentUI : MonoBehaviour
 {
     private MyComponent component;
 
+    [SerializeField]
     private Image componentImage;
-    
+
     public void SetComponentUI(MyComponent comp)
     {
         component = comp;
