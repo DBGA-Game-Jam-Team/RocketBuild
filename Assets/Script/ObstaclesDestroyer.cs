@@ -10,7 +10,7 @@ public class ObstaclesDestroyer : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.tag.Equals("Obstacle"))
+        if(collision.gameObject.tag.Equals("Obstacle") || collision.gameObject.tag.Equals("Bullet"))
             Destroy(collision.gameObject);
     }
 }

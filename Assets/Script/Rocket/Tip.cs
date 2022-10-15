@@ -9,5 +9,4 @@ public class Tip : MyComponent {
     [SerializeField] private int life;
 
     [SerializeField] private Weapon weapon;
-
 }

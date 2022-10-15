@@ -35,6 +35,8 @@ public class Rocket : Singleton<Rocket>
     private bool launched = false;
     private bool isBlinking = false;
 
+    private Weapon weapon;
+
     protected override void Awake() {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
@@ -84,8 +86,16 @@ public class Rocket : Singleton<Rocket>
         yield return new WaitForSeconds(3);
         CamerasManager.Instance.EnableGameCamera();
         launched = true;
+        InstantiateWeapon();
         StartCoroutine(StartDecrementFuel());
         UIManager.Instance.ShowGameInfoPanel(true);
+    }
+
+    private void InstantiateWeapon()
+    {
+        if (Tip.Weapon == null)
+            return;
+        weapon = Instantiate(Tip.Weapon, tipSlot.transform);
     }
 
     public bool ReadyToLaunch() {
@@ -120,8 +130,9 @@ public class Rocket : Singleton<Rocket>
     }
 
     private void HandleShooting() {
-        if (InputManager.Instance.GetShootingPressed()) {
+        if (InputManager.Instance.GetShootingPressed() && weapon != null) {
             Debug.Log("pew");
+            weapon.Shot();
         }
     }
 
