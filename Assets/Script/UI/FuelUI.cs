@@ -13,11 +13,11 @@ public class FuelUI : MonoBehaviour
     private void Start()
     {
         slider.value = 1;
-        //maxFuel = Rocket.Instance.
+        maxFuel = Rocket.Instance.Fuel;
     }
 
     private void Update()
     {
-        
+        slider.value = Rocket.Instance.Fuel / maxFuel;
     }
 }
