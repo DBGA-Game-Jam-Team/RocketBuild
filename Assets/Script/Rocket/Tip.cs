@@ -5,9 +5,4 @@ using UnityEngine;
 public class Tip : MyComponent {
     public int Life { get => life; }
     [SerializeField] private int life;
-
-
-
-
-
 }

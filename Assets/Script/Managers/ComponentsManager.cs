@@ -8,13 +8,29 @@ public class ComponentsManager : Singleton<ComponentsManager>
     [SerializeField] List<Body> bodies;
     [SerializeField] List<Thruster> thrusters;
 
-    public void InitLists() {
-        for (int i = 0; i < tips.Count; i++)
+    [SerializeField] GameObject tipsPanel;
+    [SerializeField] GameObject bodyPanel;
+    [SerializeField] GameObject thrustersPanel;
+    [SerializeField] GameObject ComponentUiPref;
+
+    public void Start() {
+        for (int i = 0; i < tips.Count; i++) {
             tips[i].ID = i;
-        for (int i = 0; i < bodies.Count; i++)
+            ComponentUI btn = Instantiate(ComponentUiPref, tipsPanel.transform).GetComponent<ComponentUI>();
+            btn.SetComponentUI(tips[i]);
+        }
+
+        for (int i = 0; i < bodies.Count; i++) {
             bodies[i].ID = i;
-        for (int i = 0; i < thrusters.Count; i++)
+            ComponentUI btn = Instantiate(ComponentUiPref, tipsPanel.transform).GetComponent<ComponentUI>();
+            btn.SetComponentUI(bodies[i]);
+        }
+
+        for (int i = 0; i < thrusters.Count; i++) {
             thrusters[i].ID = i;
+            ComponentUI btn = Instantiate(ComponentUiPref, tipsPanel.transform).GetComponent<ComponentUI>();
+            btn.SetComponentUI(thrusters[i]);
+        }
     }
         public Tip GetTip(int _id) {
         return tips[_id];

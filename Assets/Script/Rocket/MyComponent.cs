@@ -10,6 +10,7 @@ public class MyComponent : MonoBehaviour
     protected void Awake()
     {
         ComponenetSprite = GetComponent<SpriteRenderer>().sprite;
+        if (ComponenetSprite == null) Debug.Log("component sprite null");
     }
 
     //public int ID { get => id; }
