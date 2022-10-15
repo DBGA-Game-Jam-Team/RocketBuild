@@ -12,16 +12,22 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected float coolDown;
     [SerializeField] protected GameObject projectilePrefab;
 
-    private bool _canShoot = true;
+    protected bool _canShoot = true;
 
-    public void Shot() {
+    public virtual void Shot() {
         if (!_canShoot)
             return;
         Instantiate(projectilePrefab,transform.position,Quaternion.identity).GetComponent<Projectile>().Shot(transform.up);
         StartCoroutine(StartCD());
     }
 
-    private IEnumerator StartCD()
+    public void GenericShot()
+    {
+        Debug.Log("Generic Shot");
+        Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<Projectile>().Shot(transform.up);
+    }
+
+    protected IEnumerator StartCD()
     {
         OnCooldownBegin?.Invoke();
         _canShoot = false;
