@@ -4,10 +4,10 @@ using UnityEngine;
 
 public abstract class Projectile : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] protected float speed;
 
-    public void Shot(Vector2 _dir) {
-        GetComponent<Rigidbody2D>().velocity = _dir.normalized * (speed+Rocket.Instance.YSpeed);
+    public virtual void Shot(Vector2 _dir) {
+        GetComponent<Rigidbody2D>().velocity = _dir.normalized * speed;
     }
     private void OnCollisionEnter2D(Collision2D collision) {
         OnHit(collision);
