@@ -55,8 +55,6 @@ public class Rocket : Singleton<Rocket> {
 
         foreach (GameObject g in Backgrounds) g.SetActive(false);
 
-        particleSys.Play();
-
         Debug.Log("life: " + life);
         Debug.Log("fuel: " + fuel);
         Debug.Log("xSpeed: " + xSpeed);
@@ -67,6 +65,8 @@ public class Rocket : Singleton<Rocket> {
 
     private IEnumerator LaunchCor() {
         CamerasManager.Instance.EnableLaunchCamera();
+        yield return new WaitForSeconds(1.7f);
+        particleSys.Play();
         UIManager.Instance.StartCountDownText(3);
         yield return new WaitForSeconds(3);
         CamerasManager.Instance.EnableGameCamera();
