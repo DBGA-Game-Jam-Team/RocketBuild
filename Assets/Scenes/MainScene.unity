@@ -3554,7 +3554,12 @@ MonoBehaviour:
   - {fileID: 5581971644480831065, guid: 6e8b8366632ef1644a182bcc9008b4f6, type: 3}
   - {fileID: 5581971644480831065, guid: 2e4240674c0f9cf418a6761ca2ba3cf3, type: 3}
   thrusters:
+  - {fileID: 2447869832335966662, guid: 7e97b438e91fa3e4696879cd8ae53e1c, type: 3}
+  - {fileID: 2447869832335966662, guid: 8ba0da6e8b43ed945b03b7e58b5513b8, type: 3}
+  - {fileID: 2447869832335966662, guid: c478b98fc0b71e0498550911692ca12f, type: 3}
+  - {fileID: 2447869832335966662, guid: 645ea360382ff5b4fa29c8b077123104, type: 3}
   - {fileID: 2447869832335966662, guid: b36a851075d3f3a4bb0f4b58af803d33, type: 3}
+  - {fileID: 2447869832335966662, guid: c5f3725eb6cafa44a8da65e23b985989, type: 3}
   tipsPanel: {fileID: 1041090550}
   bodyPanel: {fileID: 1306425992}
   thrustersPanel: {fileID: 1932668574}
