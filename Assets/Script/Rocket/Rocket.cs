@@ -83,7 +83,7 @@ public class Rocket : Singleton<Rocket> {
             rb.velocity = Vector2.up * ySpeed;
 
             HandleSpeed();
-            //HandleShooting()
+            HandleShooting();
         }
     }
 
@@ -102,7 +102,9 @@ public class Rocket : Singleton<Rocket> {
         else rb.velocity = new Vector2(0,ySpeed);
     }
 
-    //private void HandleShooting() {
-
-    //}
+    private void HandleShooting() {
+        if (InputManager.Instance.GetShootingPressed()) {
+            Debug.Log("pew");
+        }
+    }
 }
