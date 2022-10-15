@@ -27,12 +27,12 @@ public class Rocket : Singleton<Rocket>
     [SerializeField] List<GameObject> Backgrounds;
 
     private ParticleSystem particleSys;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private bool launched = false;
 
     protected override void Awake() {
         base.Awake();
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         particleSys = GetComponent<ParticleSystem>();
         particleSys.Stop();
     }
@@ -127,10 +127,19 @@ public class Rocket : Singleton<Rocket>
             yield return new WaitForSeconds(fuelDecrementSeconds);
             fuel -= fuelDecrementAmount;
         }
-        Debug.Log("GAMEOVER FUEL EMPTY");
-        // TO - DO: GameManager.instance.GameOver();
+        GameController.Instance.GameOver();
     }
     private void UpdateDistance() {
         UIManager.Instance.ShowDistance((int)(transform.position.y*10));
+    }
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.gameObject.tag == "Obstacle") {
+            life--;
+            Destroy(collision.gameObject);
+            UIManager.Instance.UpdateLifeContainer(life);
+            if (life <= 0) {
+                GameController.Instance.GameOver();
+            }
+        }
     }
 }

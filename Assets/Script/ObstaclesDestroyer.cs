@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ObstaclesDestroyer : MonoBehaviour
 {
+    [SerializeField] Transform player;
+    private void Update() {
+        transform.position = player.position;
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.gameObject.tag.Equals("Obstacle"))

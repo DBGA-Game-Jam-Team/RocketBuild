@@ -10,6 +10,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] CountDownText countDownText;
     [SerializeField] GameObject GameInfoPanel;
     [SerializeField] TextMeshProUGUI distanceText;
+    [SerializeField] LifeContainerUI lifeContainer;
 
     public void ShowGameInfoPanel(bool _show)
     {
@@ -27,5 +28,9 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowDistance(int distance) {
         distanceText.text = distance.ToString();
+    }
+
+    public void UpdateLifeContainer(int _life) {
+        lifeContainer.SetLife(_life);
     }
 }

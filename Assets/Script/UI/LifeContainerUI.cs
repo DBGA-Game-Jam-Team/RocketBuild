@@ -20,15 +20,24 @@ public class LifeContainerUI : MonoBehaviour
         }
     }
 
-    public void RemoveLife()
-    {
-        for (int i = hearts.Count; i >= 0; ++i)
-        {
-            if (!hearts[i].IsFull)
-            {
-                hearts[i].Empty();
-                return;
-            }
+    public void SetLife(int _life) {
+        for(int i = 0; i < _life; i++) {
+            hearts[i].Full();
+        }
+        for(int i = _life; i < hearts.Count; i++) {
+            hearts[i].Empty();
         }
     }
+
+    //public void RemoveLife()
+    //{
+    //    for (int i = hearts.Count-1; i >= 0; ++i)
+    //    {
+    //        if (!hearts[i].IsFull)
+    //        {
+    //            hearts[i].Empty();
+    //            return;
+    //        }
+    //    }
+    //}
 }

@@ -14,4 +14,8 @@ public class GameController : Singleton<GameController>
             UIManager.Instance.ShowBuildPanel(false);
         }  
     }
+
+    public void GameOver() {
+        Debug.Log("GameOver");
+    }
 }
