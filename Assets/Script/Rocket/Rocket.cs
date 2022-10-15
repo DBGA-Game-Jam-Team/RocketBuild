@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Rocket : Singleton<Rocket> {
-    public Tip Tip { get; private set; }
-    public Body Body { get; private set; }
-    public Thruster Thruster { get; private set; }
+    public Tip Tip { get; private set; } = null;
+    public Body Body { get; private set; } = null;
+    public Thruster Thruster { get; private set; } = null;
 
     [SerializeField] private float ySpeed = 0f;
     [SerializeField] private float xSpeed = 0f;
@@ -54,6 +54,10 @@ public class Rocket : Singleton<Rocket> {
         Debug.Log("ySpeed: " + ySpeed);
 
         launched = true;
+    }
+
+    public bool ReadyToLaunch() {
+        return Tip != null && Body != null && Thruster != null;
     }
 
     private void Update() {

@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameController : Singleton<GameController>
 {
     public void StartLaunch() {
-        Rocket.Instance.Launch();
-        UIManager.Instance.ShowBuildPanel(false);
+        if (Rocket.Instance.ReadyToLaunch()) {
+            Rocket.Instance.Launch();
+            UIManager.Instance.ShowBuildPanel(false);
+        }  
     }
 }
