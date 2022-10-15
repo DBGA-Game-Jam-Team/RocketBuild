@@ -79,7 +79,30 @@ public class Rocket : Singleton<Rocket> {
 
     private void Update() {
         if (launched) {
+
             rb.velocity = Vector2.up * ySpeed;
+
+            HandleSpeed();
+            //HandleShooting()
         }
     }
+
+    private void HandleSpeed() {
+
+        Vector2 finalSpeed = Vector2.zero;
+
+        if (InputManager.Instance.IsMovingPlayer) {
+            if(InputManager.Instance.MoveDirectionPlayer == Vector2.right) {
+                rb.velocity = new Vector2(xSpeed,ySpeed);
+            }
+            else {
+                rb.velocity = new Vector2(-xSpeed, ySpeed);
+            }
+        }
+        else rb.velocity = new Vector2(0,ySpeed);
+    }
+
+    //private void HandleShooting() {
+
+    //}
 }
