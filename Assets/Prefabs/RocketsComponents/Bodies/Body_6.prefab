@@ -99,4 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 09677efb6f74660499e3eb5e7aa65f03, type: 3}
   life: 2
-  fuel: 100
+  fuel: 80

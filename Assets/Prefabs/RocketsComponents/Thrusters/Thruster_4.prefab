@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 82b1117f18fce4c4f9af6ede82ab4adf, type: 3}
-  ySpeed: 12
-  xSpeed: 17
+  ySpeed: 20
+  xSpeed: 25
