@@ -95,12 +95,13 @@ public class Rocket : Singleton<Rocket>
         Vector2 finalSpeed = Vector2.zero;
 
         if (InputManager.Instance.IsMovingPlayer) {
-            if(InputManager.Instance.MoveDirectionPlayer == Vector2.right) {
-                rb.velocity = new Vector2(xSpeed,ySpeed);
+            if (InputManager.Instance.MoveDirectionPlayer == Vector2.right && transform.position.x < GameController.Instance.XRightMargin - 1) {
+                rb.velocity = new Vector2(xSpeed, ySpeed);
             }
-            else {
+            else if (transform.position.x > GameController.Instance.XLeftMargin + 1) {
                 rb.velocity = new Vector2(-xSpeed, ySpeed);
             }
+            else rb.velocity = new Vector2(0, ySpeed);
         }
         else rb.velocity = new Vector2(0,ySpeed);
     }
