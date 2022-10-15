@@ -10,6 +10,7 @@ public class Rocket : Singleton<Rocket>
     public Tip Tip { get; private set; } = null;
     public Body Body { get; private set; } = null;
     public Thruster Thruster { get; private set; } = null;
+    public int Distance { get; private set; }
 
     [Header("Settings")]
     [SerializeField] float blinkDuration;
@@ -146,8 +147,10 @@ public class Rocket : Singleton<Rocket>
         GameController.Instance.GameOver();
     }
     private void UpdateDistance() {
-        UIManager.Instance.ShowDistance((int)(transform.position.y*10));
+        Distance = (int)(transform.position.y * 10);
+        UIManager.Instance.ShowDistance(Distance);
     }
+
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.gameObject.tag == "Obstacle" && !isBlinking) {
             life--;
@@ -156,8 +159,10 @@ public class Rocket : Singleton<Rocket>
             if (life <= 0) {
                 GameController.Instance.GameOver();
             }
-            isBlinking = true;
-            StartCoroutine(disableBlink());
+            else {
+                isBlinking = true;
+                StartCoroutine(disableBlink());
+            }
         }
     }
 

@@ -10,6 +10,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] GameObject GameInfoPanel;
     [SerializeField] TextMeshProUGUI distanceText;
     [SerializeField] LifeContainerUI lifeContainer;
+    [SerializeField] GameObject GameOverPanel;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     public void ShowGameInfoPanel(bool _show)
     {
@@ -18,6 +20,11 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowBuildPanel(bool _show) {
         BuildPanel.SetActive(_show);
+    }
+    public void ShowGameOverPanel() {
+        ShowGameInfoPanel(false);
+        GameOverPanel.SetActive(true);
+        scoreText.text = "Score: " + Rocket.Instance.Distance;
     }
 
     public void StartCountDownText(int _time) {
@@ -31,4 +38,6 @@ public class UIManager : Singleton<UIManager>
     public void UpdateLifeContainer(int _life) {
         lifeContainer.SetLife(_life);
     }
+
+
 }
