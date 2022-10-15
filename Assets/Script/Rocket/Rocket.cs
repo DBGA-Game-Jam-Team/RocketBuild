@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rocket : MonoBehaviour {
+public class Rocket : Singleton<Rocket> {
 
     [SerializeField] private float ySpeed;
     [SerializeField] private float xSpeed;
