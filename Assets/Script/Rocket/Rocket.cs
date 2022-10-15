@@ -16,6 +16,10 @@ public class Rocket : Singleton<Rocket>
     [SerializeField] private float fuel = 0f;
     [SerializeField] private int life = 0;
 
+    [Header("Decrement Fuel Settings")]
+    [SerializeField] private float fuelDecrementSeconds = 1.0f;
+    [SerializeField] private float fuelDecrementAmount = 1.0f;
+
     [SerializeField] private GameObject tipSlot;
     [SerializeField] private GameObject bodySlot;
     [SerializeField] private GameObject thrusterSlot;
@@ -75,6 +79,7 @@ public class Rocket : Singleton<Rocket>
         yield return new WaitForSeconds(3);
         CamerasManager.Instance.EnableGameCamera();
         launched = true;
+        StartCoroutine(StartDecrementFuel());
         UIManager.Instance.ShowGameInfoPanel(true);
     }
 
@@ -112,5 +117,16 @@ public class Rocket : Singleton<Rocket>
         if (InputManager.Instance.GetShootingPressed()) {
             Debug.Log("pew");
         }
+    }
+
+    private IEnumerator StartDecrementFuel()
+    {
+        while(fuel > 0)
+        {
+            yield return new WaitForSeconds(fuelDecrementSeconds);
+            fuel -= fuelDecrementAmount;
+        }
+        Debug.Log("GAMEOVER FUEL EMPTY");
+        // TO - DO: GameManager.instance.GameOver();
     }
 }
