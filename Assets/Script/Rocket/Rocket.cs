@@ -9,8 +9,30 @@ public class Rocket : Singleton<Rocket> {
     [SerializeField] private int fuel;
     [SerializeField] private int life;
 
-    public Tip Tip { get; set; }
-    public Body Body { get;set; }
-    public Thruster Thruster {get;set;}
+    [SerializeField] private GameObject tipSlot;
+    [SerializeField] private GameObject bodySlot;
+    [SerializeField] private GameObject thrusterSlot;
+
+    public Tip Tip { get; private set; }
+    public Body Body { get; private set; }
+    public Thruster Thruster {get; private set; }
+
+    public void EquipTip(Tip tip)
+    {
+        Tip = tip;
+        tipSlot.GetComponent<SpriteRenderer>().sprite = tip.ComponenetSprite;
+    }
+
+    public void EquipBody(Body body)
+    {
+        Body = body;
+        bodySlot.GetComponent<SpriteRenderer>().sprite = body.ComponenetSprite;
+    }
+
+    public void EquipThruster(Thruster thruster)
+    {
+        Thruster = thruster;
+        thrusterSlot.GetComponent<SpriteRenderer>().sprite = thruster.ComponenetSprite;
+    }
 
 }
