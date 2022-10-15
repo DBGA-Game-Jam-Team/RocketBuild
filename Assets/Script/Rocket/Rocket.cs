@@ -156,7 +156,8 @@ public class Rocket : Singleton<Rocket>
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.gameObject.tag == "Obstacle" && !isBlinking) {
+        if((collision.gameObject.tag == "Obstacle" || collision.gameObject.tag.Equals("EnemyBullet")) && !isBlinking) {
+            
             life--;
             Destroy(collision.gameObject);
             UIManager.Instance.UpdateLifeContainer(life);

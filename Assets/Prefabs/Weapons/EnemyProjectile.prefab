@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6770396650056648798}
   m_Layer: 0
   m_Name: EnemyProjectile
-  m_TagString: Bullet
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &6770396650056648798
 MonoBehaviour:
