@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 683722731555992222}
   - component: {fileID: 683722731555992216}
   - component: {fileID: 683722731555992217}
+  - component: {fileID: 6456161142297355139}
   m_Layer: 0
   m_Name: EnemyTripleShotDown
   m_TagString: Obstacle
@@ -98,6 +99,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6991182}
   m_EdgeRadius: 0
+--- !u!95 &6456161142297355139
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683722731555992220}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c422612191814647a7eea83e9e1c459, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &683722732725524010
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +130,7 @@ GameObject:
   - component: {fileID: 683722732725524005}
   - component: {fileID: 683722732725524004}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
