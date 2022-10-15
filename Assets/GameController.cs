@@ -8,7 +8,6 @@ public class GameController : Singleton<GameController>
         if (Rocket.Instance.ReadyToLaunch()) {
             Rocket.Instance.Launch();
             UIManager.Instance.ShowBuildPanel(false);
-            CamerasManager.Instance.EnableGameCamera(true);
         }  
     }
 }

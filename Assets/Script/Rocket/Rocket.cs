@@ -62,14 +62,16 @@ public class Rocket : Singleton<Rocket> {
         Debug.Log("xSpeed: " + xSpeed);
         Debug.Log("ySpeed: " + ySpeed);
 
-        //StartCoroutine(LaunchCor());
-
-        launched = true;
+        StartCoroutine(LaunchCor());
     }
 
-    //private IEnumerator LaunchCor() {
-    //    yield 
-    //}
+    private IEnumerator LaunchCor() {
+        CamerasManager.Instance.EnableLaunchCamera();
+        UIManager.Instance.StartCountDownText(3);
+        yield return new WaitForSeconds(3);
+        CamerasManager.Instance.EnableGameCamera();
+        launched = true;
+    }
 
     public bool ReadyToLaunch() {
         return Tip != null && Body != null && Thruster != null;

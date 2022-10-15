@@ -5,8 +5,9 @@ using TMPro;
 
 public class CountDownText : MonoBehaviour {
     private TextMeshProUGUI myText;
+
     private void Awake() {
-        myText = GetComponent<TMProUGUI>();
+        myText = GetComponent<TextMeshProUGUI>();
         myText.text = "";
     }
 
@@ -15,11 +16,15 @@ public class CountDownText : MonoBehaviour {
     }
 
     private IEnumerator countDownCor(int _startTime) {
-        float startTime =
-        for (int i = _startTime; i > 0; i--) {
-            yield return new WaitForSeconds(1);
 
-        }
+        int i = _startTime;
+        do {
+            myText.text = i.ToString();
+            i--;
+            yield return new WaitForSeconds(1);
+        }while (i > 0);
+
+        gameObject.SetActive(false);
     }
 
 }

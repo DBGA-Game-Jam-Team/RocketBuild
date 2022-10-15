@@ -6,13 +6,13 @@ public class UIManager : Singleton<UIManager>
 {
     [SerializeField] GameObject BuildPanel;
     [SerializeField] GameObject LaunchButton;
-    [SerializeField] 
+    [SerializeField] CountDownText countDownText;
     public void ShowBuildPanel(bool _show) {
         BuildPanel.SetActive(_show);
         LaunchButton.SetActive(_show);
     }
 
-    public void StartCountDown(int _time) {
-
+    public void StartCountDownText(int _time) {
+        countDownText.StartCountDown(_time);
     }
 }

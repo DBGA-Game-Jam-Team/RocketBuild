@@ -6,15 +6,27 @@ public class CamerasManager : Singleton<CamerasManager>
 {
     [SerializeField] GameObject BuildCamera;
     [SerializeField] GameObject GameCamera;
+    [SerializeField] GameObject LaunchCamera;
 
     private void Start() {
-        BuildCamera.SetActive(true);
-        GameCamera.SetActive(false);
+        EnableBuildCamera();
     }
 
-    public void EnableGameCamera(bool _enable) {
-        GameCamera.SetActive(_enable);
-        BuildCamera.SetActive(!_enable);
+    public void EnableBuildCamera() {
+        BuildCamera.SetActive(true);
+        GameCamera.SetActive(false);
+        LaunchCamera.SetActive(false);
+    }
+    public void EnableGameCamera() {
+        BuildCamera.SetActive(false);
+        GameCamera.SetActive(true);
+        LaunchCamera.SetActive(false);
+    }
+
+    public void EnableLaunchCamera() {
+        BuildCamera.SetActive(false);
+        GameCamera.SetActive(false);
+        LaunchCamera.SetActive(true);
     }
 
 }
