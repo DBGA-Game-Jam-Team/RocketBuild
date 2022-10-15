@@ -11,24 +11,29 @@ public class Rocket : Singleton<Rocket>
     public Body Body { get; private set; } = null;
     public Thruster Thruster { get; private set; } = null;
 
-    [SerializeField] private float ySpeed = 0f;
-    [SerializeField] private float xSpeed = 0f;
-    [SerializeField] private float fuel = 0f;
-    [SerializeField] private int life = 0;
+    [Header("Settings")]
+    [SerializeField] float blinkDuration;
 
     [Header("Decrement Fuel Settings")]
     [SerializeField] private float fuelDecrementSeconds = 1.0f;
     [SerializeField] private float fuelDecrementAmount = 1.0f;
 
+    [Header("References")]
     [SerializeField] private GameObject tipSlot;
     [SerializeField] private GameObject bodySlot;
     [SerializeField] private GameObject thrusterSlot;
-
     [SerializeField] List<GameObject> Backgrounds;
+
+    [Header("ReadOnly for debug")]
+    [SerializeField] private float ySpeed = 0f;
+    [SerializeField] private float xSpeed = 0f;
+    [SerializeField] private float fuel = 0f;
+    [SerializeField] private int life = 0;
 
     private ParticleSystem particleSys;
     private Rigidbody2D rb;
     private bool launched = false;
+    private bool isBlinking = false;
 
     protected override void Awake() {
         base.Awake();
@@ -133,13 +138,40 @@ public class Rocket : Singleton<Rocket>
         UIManager.Instance.ShowDistance((int)(transform.position.y*10));
     }
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.gameObject.tag == "Obstacle") {
+        if(collision.gameObject.tag == "Obstacle" && !isBlinking) {
             life--;
             Destroy(collision.gameObject);
             UIManager.Instance.UpdateLifeContainer(life);
             if (life <= 0) {
                 GameController.Instance.GameOver();
             }
+            isBlinking = true;
+            StartCoroutine(disableBlink());
         }
+    }
+
+    private IEnumerator disableBlink() {
+
+        float startTime = Time.time;
+        particleSys.Stop();
+
+        while(Time.time - startTime < blinkDuration) {
+            Debug.Log("looping");
+            EnableSprites(!SpriteRenderersEnabled());
+
+            yield return new WaitForSeconds(0.1f);
+        }
+        EnableSprites(true);
+        particleSys.Play();
+        isBlinking = false;
+    }
+
+    private void EnableSprites(bool _enable) {
+        tipSlot.GetComponent<SpriteRenderer>().enabled = _enable;
+        bodySlot.GetComponent<SpriteRenderer>().enabled = _enable;
+        thrusterSlot.GetComponent<SpriteRenderer>().enabled = _enable;
+    }
+    private bool SpriteRenderersEnabled() {
+        return tipSlot.GetComponent<SpriteRenderer>().enabled;
     }
 }

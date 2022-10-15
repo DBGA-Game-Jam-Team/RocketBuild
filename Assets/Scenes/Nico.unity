@@ -4071,10 +4071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a51a1a9b2d628f489684388273893ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ySpeed: 0
-  xSpeed: 0
-  fuel: 0
-  life: 0
+  blinkDuration: 2
   fuelDecrementSeconds: 0.1
   fuelDecrementAmount: 0.1
   tipSlot: {fileID: 1879256546}
@@ -4084,6 +4081,10 @@ MonoBehaviour:
   - {fileID: 1003964938}
   - {fileID: 2107386705}
   - {fileID: 1402331306}
+  ySpeed: 0
+  xSpeed: 0
+  fuel: 0
+  life: 0
 --- !u!199 &1991069091
 ParticleSystemRenderer:
   serializedVersion: 6
