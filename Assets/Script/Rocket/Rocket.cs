@@ -18,13 +18,15 @@ public class Rocket : Singleton<Rocket> {
 
     [SerializeField] List<GameObject> Backgrounds;
 
-
+    private ParticleSystem particleSys;
     private Rigidbody rb;
     private bool launched = false;
 
     protected override void Awake() {
         base.Awake();
         rb = GetComponent<Rigidbody>();
+        particleSys = GetComponent<ParticleSystem>();
+        particleSys.Stop();
     }
 
     public void EquipTip(Tip tip) {
@@ -52,6 +54,8 @@ public class Rocket : Singleton<Rocket> {
         ySpeed += Thruster.YSpeed;
 
         foreach (GameObject g in Backgrounds) g.SetActive(false);
+
+        particleSys.Play();
 
         Debug.Log("life: " + life);
         Debug.Log("fuel: " + fuel);
