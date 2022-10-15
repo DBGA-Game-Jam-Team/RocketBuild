@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2841114388904524195}
   - component: {fileID: 2841114388904524197}
   m_Layer: 0
-  m_Name: TipWeapon
+  m_Name: Tip_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aa0e8e031600f974997d6f9399939cb0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f784f91672419b40af50de85d5d847b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,6 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f48c556e77872b42b59781602abc42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: aa0e8e031600f974997d6f9399939cb0, type: 3}
+  sprite: {fileID: 21300000, guid: 9f784f91672419b40af50de85d5d847b, type: 3}
   life: 1
-  weapon: {fileID: 1599936829192612131, guid: 72e002cfaedc44442a9e8fa648dc5063, type: 3}
+  weapon: {fileID: 0}

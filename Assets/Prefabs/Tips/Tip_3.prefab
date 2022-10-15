@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2841114388904524195}
   - component: {fileID: 2841114388904524197}
   m_Layer: 0
-  m_Name: BaseTip
+  m_Name: Tip_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
