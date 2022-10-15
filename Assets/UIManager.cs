@@ -6,7 +6,6 @@ using TMPro;
 public class UIManager : Singleton<UIManager>
 {
     [SerializeField] GameObject BuildPanel;
-    [SerializeField] GameObject LaunchButton;
     [SerializeField] CountDownText countDownText;
     [SerializeField] GameObject GameInfoPanel;
     [SerializeField] TextMeshProUGUI distanceText;
@@ -19,7 +18,6 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowBuildPanel(bool _show) {
         BuildPanel.SetActive(_show);
-        LaunchButton.SetActive(_show);
     }
 
     public void StartCountDownText(int _time) {
