@@ -11,7 +11,7 @@ public class InputManager : Singleton<InputManager>
 
     private bool _isShootingPressed = false;
 
-    public void MovePressedPlayer1(InputAction.CallbackContext context)
+    public void MovePressed(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
