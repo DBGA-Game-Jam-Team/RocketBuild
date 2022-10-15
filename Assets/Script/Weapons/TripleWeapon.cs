@@ -11,6 +11,7 @@ public class TripleWeapon : Weapon
     {
         if (!_canShoot)
             return;
+        Debug.Log(weapons.Count);
         foreach (Weapon weapon in weapons)
             weapon.GenericShot();
         StartCoroutine(StartCD());
