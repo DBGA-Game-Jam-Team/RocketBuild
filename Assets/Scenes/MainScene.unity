@@ -339,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50179df06096ea446ae5fbe2e3029923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameoverClip: {fileID: 8300000, guid: 1288d6f2c93bda84f907c1c94acaf983, type: 3}
   rightMargin: {fileID: 1695666419}
   leftMargin: {fileID: 1649762671}
 --- !u!1 &204320095
@@ -1799,7 +1800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: 1e-45, z: -0, w: 1}
-  m_LocalPosition: {x: -4.599018, y: -21.429476, z: 186.6321}
+  m_LocalPosition: {x: 1.7009821, y: -21.199476, z: 186.6321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5960,6 +5961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63df072533b930847804bf9b93f421ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdownClip: {fileID: 8300000, guid: f20fad971383c584184af7cf71b5aeb3, type: 3}
 --- !u!1 &1648270104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7208,6 +7210,7 @@ MonoBehaviour:
   fuel: 0
   life: 0
   launchClip: {fileID: 8300000, guid: 0479ada493daa8949b19d7ba63865483, type: 3}
+  damageClip: {fileID: 8300000, guid: 135a3dc687e6e1742bcff85de4440137, type: 3}
 --- !u!199 &1991069091
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -12778,7 +12781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 948533020999583290, guid: c754890acc7e4494b87568e03919781a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 224.26994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 948533020999583290, guid: c754890acc7e4494b87568e03919781a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12946,7 +12949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2528821408098365600, guid: c754890acc7e4494b87568e03919781a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 224.26994
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2528821408098365600, guid: c754890acc7e4494b87568e03919781a, type: 3}
       propertyPath: m_AnchoredPosition.y

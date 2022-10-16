@@ -4,8 +4,11 @@ using UnityEngine;
 using TMPro;
 
 public class CountDownText : MonoBehaviour {
-    private TextMeshProUGUI myText;
 
+    [SerializeField]
+    private AudioClip countdownClip;
+
+    private TextMeshProUGUI myText;
     private void Awake() {
         myText = GetComponent<TextMeshProUGUI>();
         myText.text = "";
@@ -21,6 +24,7 @@ public class CountDownText : MonoBehaviour {
         do {
             myText.text = i.ToString();
             i--;
+            AudioController.Instance.PlaySFX(countdownClip);
             yield return new WaitForSeconds(1);
         }while (i > 0);
 

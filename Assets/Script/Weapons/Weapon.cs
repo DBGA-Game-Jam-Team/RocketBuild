@@ -13,6 +13,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected GameObject projectilePrefab;
     [SerializeField] protected bool usesCoolDown = false;
 
+    [SerializeField]
+    private AudioClip shotClip;
+
     protected bool _canShoot = true;
 
     public void EnableCooldown() {
@@ -22,7 +25,8 @@ public class Weapon : MonoBehaviour
     public virtual void Shot() {
         if (_canShoot) {
             Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>().Shot(transform.up);
-            
+            AudioController.Instance.PlaySFX(shotClip);
+
             if (usesCoolDown)
                 StartCoroutine(StartCD());
         }
