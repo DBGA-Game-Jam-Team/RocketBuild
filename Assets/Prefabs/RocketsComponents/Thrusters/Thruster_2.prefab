@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: acbeb4c77262f824ca1aefacaacd57b1, type: 3}
+  componentName: Cosmic Cup
   ySpeed: 10
   xSpeed: 8

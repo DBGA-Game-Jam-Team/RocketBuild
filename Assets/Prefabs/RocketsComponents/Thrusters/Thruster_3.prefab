@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 695fe1a8c8089254facad16eb2c51b7d, type: 3}
+  componentName: Trashy Bag
   ySpeed: 5
   xSpeed: 8

@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 04fd556b0e627db42a6e1a60e29cfedb, type: 3}
+  componentName: Shieldo
   life: 3
   fuel: 40

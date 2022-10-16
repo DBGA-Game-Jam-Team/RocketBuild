@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 9f784f91672419b40af50de85d5d847b, type: 3}
+  componentName: Bullit
   life: 3
   weapon: {fileID: 0}

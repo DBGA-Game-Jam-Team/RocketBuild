@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 55d6a253f6115e84aacf1802f4a3c671, type: 3}
+  componentName: Cerberus
   life: 0
   weapon: {fileID: 1619012244691023136, guid: 4f22fa3dd16f22c40b918c2b8d15a68b, type: 3}

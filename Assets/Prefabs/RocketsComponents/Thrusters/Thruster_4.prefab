@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 82b1117f18fce4c4f9af6ede82ab4adf, type: 3}
+  componentName: Jetpack
   ySpeed: 20
   xSpeed: 25

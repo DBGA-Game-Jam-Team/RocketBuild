@@ -98,5 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 5cd27aeaad17d0844bd6f2534f2caf2c, type: 3}
+  componentName: Curtain
   ySpeed: 10
   xSpeed: 30
