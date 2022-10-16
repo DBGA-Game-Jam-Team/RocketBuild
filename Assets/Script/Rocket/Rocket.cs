@@ -8,6 +8,8 @@ public class Rocket : Singleton<Rocket>
     public float Fuel { get => fuel; }
     public float YSpeed { get => ySpeed; }
 
+    public bool Launched { get => launched; }
+
     public Tip Tip { get; private set; } = null;
     public Body Body { get; private set; } = null;
     public Thruster Thruster { get; private set; } = null;
@@ -31,6 +33,10 @@ public class Rocket : Singleton<Rocket>
     [SerializeField] private float xSpeed = 0f;
     [SerializeField] private float fuel = 0f;
     [SerializeField] private int life = 0;
+
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip launchClip;
 
     private ParticleSystem particleSys;
     private Rigidbody2D rb;
@@ -95,6 +101,7 @@ public class Rocket : Singleton<Rocket>
         InstantiateWeapon();
         StartCoroutine(StartDecrementFuel());
         UIManager.Instance.ShowGameInfoPanel(true);
+        AudioController.Instance.PlayBGM(launchClip);
     }
 
     private void InstantiateWeapon()

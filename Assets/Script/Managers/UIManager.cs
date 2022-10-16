@@ -35,6 +35,7 @@ public class UIManager : Singleton<UIManager>
 
     public void ShowGameOverPanel() {
         ShowGameInfoPanel(false);
+        AudioController.Instance.StopBGM();
         gameOverPanel.SetActive(true);
         scoreText.text = "Score: " + Rocket.Instance.Distance;
     }
