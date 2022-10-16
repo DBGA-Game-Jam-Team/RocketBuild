@@ -32,10 +32,4 @@ public class GameController : Singleton<GameController>
     public void QuitGame() {
         Application.Quit();
     }
-
-    public void StartGame() {
-        UIManager.Instance.AnimateInBuildPanel();
-    }
-
-
 }
