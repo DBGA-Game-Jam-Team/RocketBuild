@@ -199,5 +199,9 @@ public class Rocket : Singleton<Rocket>
 
     public void FillFuel(float perc) {
         fuel += perc * maxFuel / 100;
+        if (fuel > maxFuel)
+        {
+            fuel = maxFuel;
+        }
     }
 }
