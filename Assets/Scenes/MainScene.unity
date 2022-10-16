@@ -5905,6 +5905,7 @@ GameObject:
   - component: {fileID: 1991069091}
   - component: {fileID: 1991069094}
   - component: {fileID: 1991069093}
+  - component: {fileID: 1991069095}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Player
@@ -6863,8 +6864,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 80
-      minScalar: 40
+      scalar: 0
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10773,6 +10774,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0.010493994, y: -0.009274006}
   m_Size: {x: 0.96830225, y: 3.0020561}
   m_Direction: 0
+--- !u!95 &1991069095
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991069087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a932b8c24f9fcfc4aba8874679400b4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2011734267
 GameObject:
   m_ObjectHideFlags: 0
