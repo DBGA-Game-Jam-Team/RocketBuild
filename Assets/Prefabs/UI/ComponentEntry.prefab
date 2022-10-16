@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6662090967181243214}
   - component: {fileID: 2705185566661639945}
   - component: {fileID: 160944379145324468}
+  - component: {fileID: 4691681298274247310}
   m_Layer: 5
   m_Name: ComponentEntry
   m_TagString: Untagged
@@ -95,6 +96,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4691681298274247310}
+        m_TargetAssemblyTypeName: CanvasPlayer, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 3a6ba3dc3aaa0db48810f5f4ff19caee, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &160944379145324468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +121,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentImage: {fileID: 7488135726589199089}
+--- !u!114 &4691681298274247310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937662324624132906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8c9ecddf7997d47a42318db984ceb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9036304224319609357
 GameObject:
   m_ObjectHideFlags: 0
