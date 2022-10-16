@@ -17,7 +17,7 @@ public class GameController : Singleton<GameController>
     public void StartLaunch() {
         if (Rocket.Instance.ReadyToLaunch()) {
             Rocket.Instance.Launch();
-            UIManager.Instance.ShowBuildPanel(false);
+            UIManager.Instance.AnimateOutBuildPanel();
         }  
     }
 

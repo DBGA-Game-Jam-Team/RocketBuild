@@ -5,7 +5,7 @@ using TMPro;
 
 public class UIManager : Singleton<UIManager>
 {
-    [SerializeField] GameObject BuildPanel;
+    [SerializeField] GameObject ComponentsPanel;
     [SerializeField] CountDownText countDownText;
     [SerializeField] GameObject GameInfoPanel;
     [SerializeField] TextMeshProUGUI distanceText;
@@ -18,9 +18,13 @@ public class UIManager : Singleton<UIManager>
         GameInfoPanel.SetActive(_show);
     }
 
-    public void ShowBuildPanel(bool _show) {
-        BuildPanel.SetActive(_show);
+    public void AnimateOutBuildPanel() {
+        ComponentsPanel.GetComponent<Animator>().SetTrigger("PanelOut");
     }
+    public void HideBuildPanel() {
+        ComponentsPanel.SetActive(false);
+    }
+
     public void ShowGameOverPanel() {
         ShowGameInfoPanel(false);
         GameOverPanel.SetActive(true);
@@ -38,6 +42,4 @@ public class UIManager : Singleton<UIManager>
     public void UpdateLifeContainer(int _life) {
         lifeContainer.SetLife(_life);
     }
-
-
 }
