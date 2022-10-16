@@ -388,7 +388,7 @@ MonoBehaviour:
   icoHeart: {fileID: 21300000, guid: e509abdaaf56fbe4a93e70291b94edaf, type: 3}
   icoThunder: {fileID: 21300000, guid: 370df689ac38f534f974517b6aba0540, type: 3}
   icoSWheel: {fileID: 21300000, guid: f326880ac00bbbe4da5e5e0014a62e95, type: 3}
-  icoFuel: {fileID: 21300000, guid: 41d4ee081815fb04dbf49f27fb556882, type: 3}
+  icoFuel: {fileID: 21300000, guid: f7ac735c2b8541b45aa23746af455325, type: 3}
 --- !u!1 &4908529408852732056
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
   icoHeart: {fileID: 21300000, guid: e509abdaaf56fbe4a93e70291b94edaf, type: 3}
   icoThunder: {fileID: 21300000, guid: 370df689ac38f534f974517b6aba0540, type: 3}
   icoSWheel: {fileID: 21300000, guid: f326880ac00bbbe4da5e5e0014a62e95, type: 3}
-  icoFuel: {fileID: 21300000, guid: 41d4ee081815fb04dbf49f27fb556882, type: 3}
+  icoFuel: {fileID: 21300000, guid: f7ac735c2b8541b45aa23746af455325, type: 3}
 --- !u!1 &6174277422109774864
 GameObject:
   m_ObjectHideFlags: 0
