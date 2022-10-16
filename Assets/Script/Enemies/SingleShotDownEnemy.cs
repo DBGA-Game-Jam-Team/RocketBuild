@@ -9,6 +9,6 @@ public class SingleShotDownEnemy : AbsEnemy
 
     protected override void Shot()
     {
-        weapon.GenericShot();
+        weapon.Shot();
     }
 }

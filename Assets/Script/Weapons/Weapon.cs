@@ -11,18 +11,19 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] protected float coolDown;
     [SerializeField] protected GameObject projectilePrefab;
-    [SerializeField] protected bool isPlayerWeapon = false;
+    [SerializeField] protected bool usesCoolDown = false;
 
     protected bool _canShoot = true;
 
-    public void SetPlayerWeapon() {
-        isPlayerWeapon = true;
+    public void EnableCooldown() {
+        usesCoolDown = true;
     }
 
     public virtual void Shot() {
         if (_canShoot) {
             Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>().Shot(transform.up);
-            if (isPlayerWeapon)
+            
+            if (usesCoolDown)
                 StartCoroutine(StartCD());
         }
     }

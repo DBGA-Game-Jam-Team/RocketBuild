@@ -9,10 +9,12 @@ public class TripleWeapon : Weapon
 
     public override void Shot()
     {
-        foreach (Weapon weapon in weapons)
-            weapon.GenericShot();
+        if (_canShoot) {
+            foreach (Weapon weapon in weapons)
+                weapon.Shot();
 
-        if(isPlayerWeapon)
-            StartCoroutine(StartCD());
+            if (usesCoolDown)
+                StartCoroutine(StartCD());
+        }
     }
 }
