@@ -12,6 +12,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] LifeContainerUI lifeContainer;
     [SerializeField] GameObject GameOverPanel;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] GameObject launchButton;
 
     public void ShowGameInfoPanel(bool _show)
     {
@@ -20,6 +21,7 @@ public class UIManager : Singleton<UIManager>
 
     public void AnimateOutBuildPanel() {
         ComponentsPanel.GetComponent<Animator>().SetTrigger("PanelOut");
+        launchButton.SetActive(false);
     }
     public void HideBuildPanel() {
         ComponentsPanel.SetActive(false);
