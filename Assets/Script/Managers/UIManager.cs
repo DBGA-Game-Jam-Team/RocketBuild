@@ -16,6 +16,8 @@ public class UIManager : Singleton<UIManager>
 
     private void Start() {
         componentsPanel.SetActive(true);
+        gameOverPanel.SetActive(false);
+        gameInfoPanel.SetActive(false);
     }
 
     public void ShowGameInfoPanel(bool _show)
