@@ -33,7 +33,9 @@ public class GameController : Singleton<GameController>
         Application.Quit();
     }
 
-
+    public void StartGame() {
+        UIManager.Instance.AnimateInBuildPanel();
+    }
 
 
 }
