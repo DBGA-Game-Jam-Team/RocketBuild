@@ -100,4 +100,4 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 14a6c6f2135686e43a390f8687295df9, type: 3}
   componentName: The Rad
   life: 1
-  fuel: 120
+  fuel: 90

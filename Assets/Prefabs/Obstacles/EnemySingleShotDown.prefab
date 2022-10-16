@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3fbb4979070e34096fd8e6eed0c188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minShotTime: 1
-  maxShotTime: 3
+  minShotTime: 0.5
+  maxShotTime: 1
   weapon: {fileID: 9050674889336335677}
 --- !u!50 &7759256625087329307
 Rigidbody2D:

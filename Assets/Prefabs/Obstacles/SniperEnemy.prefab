@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minShotTime: 0.5
-  maxShotTime: 2
+  maxShotTime: 1
   weapon: {fileID: 8622777216738549512}
 --- !u!95 &2529028867452016532
 Animator:
