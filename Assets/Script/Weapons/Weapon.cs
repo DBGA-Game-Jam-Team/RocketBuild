@@ -11,21 +11,27 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] protected float coolDown;
     [SerializeField] protected GameObject projectilePrefab;
+    [SerializeField] protected bool isPlayerWeapon = false;
 
     protected bool _canShoot = true;
 
-    public virtual void Shot() {
-        if (!_canShoot)
-            return;
-        Instantiate(projectilePrefab,transform.position,Quaternion.identity).GetComponent<Projectile>().Shot(transform.up);
-        StartCoroutine(StartCD());
+    public void SetPlayerWeapon() {
+        isPlayerWeapon = true;
     }
 
-    public void GenericShot()
-    {
-        Debug.Log("Generic Shot");
-        Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<Projectile>().Shot(transform.up);
+    public virtual void Shot() {
+        if (_canShoot) {
+            Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Projectile>().Shot(transform.up);
+            if (isPlayerWeapon)
+                StartCoroutine(StartCD());
+        }
     }
+
+    //public void GenericShot()
+    //{
+    //    Debug.Log("Generic Shot");
+    //    Instantiate(projectilePrefab, transform.position, transform.rotation).GetComponent<Projectile>().Shot(transform.up);
+    //}
 
     protected IEnumerator StartCD()
     {

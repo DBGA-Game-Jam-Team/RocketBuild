@@ -9,11 +9,10 @@ public class TripleWeapon : Weapon
 
     public override void Shot()
     {
-        if (!_canShoot)
-            return;
-        Debug.Log(weapons.Count);
         foreach (Weapon weapon in weapons)
             weapon.GenericShot();
-        StartCoroutine(StartCD());
+
+        if(isPlayerWeapon)
+            StartCoroutine(StartCD());
     }
 }

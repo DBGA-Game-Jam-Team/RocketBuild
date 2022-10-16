@@ -102,6 +102,7 @@ public class Rocket : Singleton<Rocket>
         if (Tip.Weapon == null)
             return;
         weapon = Instantiate(Tip.Weapon, tipSlot.transform);
+        weapon.SetPlayerWeapon();
     }
 
     public bool ReadyToLaunch() {
