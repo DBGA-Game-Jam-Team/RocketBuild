@@ -5,25 +5,37 @@ using TMPro;
 
 public class UIManager : Singleton<UIManager>
 {
-    [SerializeField] GameObject BuildPanel;
+    [SerializeField] GameObject componentsPanel;
     [SerializeField] CountDownText countDownText;
-    [SerializeField] GameObject GameInfoPanel;
+    [SerializeField] GameObject gameInfoPanel;
     [SerializeField] TextMeshProUGUI distanceText;
     [SerializeField] LifeContainerUI lifeContainer;
-    [SerializeField] GameObject GameOverPanel;
+    [SerializeField] GameObject gameOverPanel;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] GameObject launchButton;
+
+    private void Start() {
+        componentsPanel.SetActive(true);
+        gameOverPanel.SetActive(false);
+        gameInfoPanel.SetActive(false);
+    }
 
     public void ShowGameInfoPanel(bool _show)
     {
-        GameInfoPanel.SetActive(_show);
+        gameInfoPanel.SetActive(_show);
     }
 
-    public void ShowBuildPanel(bool _show) {
-        BuildPanel.SetActive(_show);
+    public void AnimateOutBuildPanel() {
+        componentsPanel.GetComponent<Animator>().SetTrigger("PanelOut");
+        launchButton.SetActive(false);
     }
+    public void HideBuildPanel() {
+        componentsPanel.SetActive(false);
+    }
+
     public void ShowGameOverPanel() {
         ShowGameInfoPanel(false);
-        GameOverPanel.SetActive(true);
+        gameOverPanel.SetActive(true);
         scoreText.text = "Score: " + Rocket.Instance.Distance;
     }
 
@@ -38,6 +50,4 @@ public class UIManager : Singleton<UIManager>
     public void UpdateLifeContainer(int _life) {
         lifeContainer.SetLife(_life);
     }
-
-
 }

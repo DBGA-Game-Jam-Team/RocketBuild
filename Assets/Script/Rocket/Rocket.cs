@@ -87,6 +87,7 @@ public class Rocket : Singleton<Rocket>
         CamerasManager.Instance.EnableLaunchCamera();
         yield return new WaitForSeconds(1.7f);
         particleSys.Play();
+        GetComponent<Animator>().SetTrigger("Launch");
         UIManager.Instance.StartCountDownText(3);
         yield return new WaitForSeconds(3);
         CamerasManager.Instance.EnableGameCamera();
