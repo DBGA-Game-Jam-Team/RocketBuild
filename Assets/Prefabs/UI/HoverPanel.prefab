@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281048729106667110}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 66.706, y: 50}
+  m_SizeDelta: {x: 89.0582, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4423681436020714104
 CanvasRenderer:
@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 2528821408098365600}
   - component: {fileID: 5668945127903200134}
   - component: {fileID: 1534924403943967141}
+  - component: {fileID: 6479292760008597300}
   m_Layer: 5
   m_Name: SecondStatPanel
   m_TagString: Untagged
@@ -367,6 +368,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &6479292760008597300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501985689930968747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766d50410e7931f479be291047785aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFirstStat: 0
+  iconImage: {fileID: 6313863583932581778}
+  valueText: {fileID: 419465393590930434}
+  nameText: {fileID: 4908529408852732038}
+  icoBullet: {fileID: 21300000, guid: ef734c83900ed394695686713cf1789e, type: 3}
+  icoHeart: {fileID: 21300000, guid: e509abdaaf56fbe4a93e70291b94edaf, type: 3}
+  icoThunder: {fileID: 21300000, guid: 370df689ac38f534f974517b6aba0540, type: 3}
+  icoSWheel: {fileID: 21300000, guid: f326880ac00bbbe4da5e5e0014a62e95, type: 3}
+  icoFuel: {fileID: 21300000, guid: 41d4ee081815fb04dbf49f27fb556882, type: 3}
 --- !u!1 &4908529408852732056
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +401,7 @@ GameObject:
   - component: {fileID: 4908529408852732039}
   - component: {fileID: 4908529408852732038}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,6 +656,7 @@ GameObject:
   - component: {fileID: 948533020999583290}
   - component: {fileID: 4280173930051814045}
   - component: {fileID: 4260839290339408890}
+  - component: {fileID: 1344678257917783649}
   m_Layer: 5
   m_Name: FirstStatPanel
   m_TagString: Untagged
@@ -703,6 +726,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &1344678257917783649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6149065746381850539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766d50410e7931f479be291047785aa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFirstStat: 1
+  iconImage: {fileID: 5468156048812432050}
+  valueText: {fileID: 115281359095556967}
+  nameText: {fileID: 4908529408852732038}
+  icoBullet: {fileID: 21300000, guid: ef734c83900ed394695686713cf1789e, type: 3}
+  icoHeart: {fileID: 21300000, guid: e509abdaaf56fbe4a93e70291b94edaf, type: 3}
+  icoThunder: {fileID: 21300000, guid: 370df689ac38f534f974517b6aba0540, type: 3}
+  icoSWheel: {fileID: 21300000, guid: f326880ac00bbbe4da5e5e0014a62e95, type: 3}
+  icoFuel: {fileID: 21300000, guid: 41d4ee081815fb04dbf49f27fb556882, type: 3}
 --- !u!1 &6174277422109774864
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +783,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 66.706, y: 50}
+  m_SizeDelta: {x: 89.0582, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7417049178080829431
 CanvasRenderer:
@@ -769,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' x3'
+  m_text: x100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
   m_sharedMaterial: {fileID: -5625656238668709750, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
