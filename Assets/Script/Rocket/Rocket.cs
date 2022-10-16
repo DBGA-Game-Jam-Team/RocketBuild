@@ -39,6 +39,8 @@ public class Rocket : Singleton<Rocket>
     private AudioClip launchClip;
     [SerializeField]
     private AudioClip damageClip;
+    [SerializeField]
+    private AudioClip liftOffClip;
 
     private ParticleSystem particleSys;
     private Rigidbody2D rb;
@@ -95,6 +97,7 @@ public class Rocket : Singleton<Rocket>
         CamerasManager.Instance.EnableLaunchCamera();
         yield return new WaitForSeconds(1.7f);
         particleSys.Play();
+        AudioController.Instance.PlaySFX(liftOffClip);
         GetComponent<Animator>().SetTrigger("Launch");
         UIManager.Instance.StartCountDownText(3);
         yield return new WaitForSeconds(3);
