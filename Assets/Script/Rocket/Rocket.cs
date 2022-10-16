@@ -37,6 +37,8 @@ public class Rocket : Singleton<Rocket>
     [Header("Audio")]
     [SerializeField]
     private AudioClip launchClip;
+    [SerializeField]
+    private AudioClip damageClip;
 
     private ParticleSystem particleSys;
     private Rigidbody2D rb;
@@ -145,6 +147,7 @@ public class Rocket : Singleton<Rocket>
 
     private void HandleShooting() {
         if (InputManager.Instance.GetShootingPressed() && weapon != null) {
+            
             Debug.Log("pew");
             weapon.Shot();
         }
@@ -166,7 +169,7 @@ public class Rocket : Singleton<Rocket>
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if((collision.gameObject.tag == "Obstacle" || collision.gameObject.tag.Equals("EnemyBullet")) && !isBlinking) {
-            
+            AudioController.Instance.PlaySFX(damageClip);
             life--;
             Destroy(collision.gameObject);
             UIManager.Instance.UpdateLifeContainer(life);

@@ -7208,6 +7208,8 @@ MonoBehaviour:
   fuel: 0
   life: 0
   launchClip: {fileID: 8300000, guid: 0479ada493daa8949b19d7ba63865483, type: 3}
+  damageClip: {fileID: 8300000, guid: 135a3dc687e6e1742bcff85de4440137, type: 3}
+  shotClip: {fileID: 8300000, guid: 9b47661eaa51a9f47b31452dab85f765, type: 3}
 --- !u!199 &1991069091
 ParticleSystemRenderer:
   serializedVersion: 6

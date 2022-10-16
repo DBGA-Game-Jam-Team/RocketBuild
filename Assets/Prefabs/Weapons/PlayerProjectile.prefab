@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  destroyClip: {fileID: 8300000, guid: 404e9d3f2c0544a4398068cff6c84249, type: 3}

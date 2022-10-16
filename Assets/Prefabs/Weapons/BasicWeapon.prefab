@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coolDown: 1
   projectilePrefab: {fileID: 1980574737196335804, guid: 31698f69e4b627a4b83972c7f4587f32, type: 3}
+  usesCoolDown: 0
+  shotClip: {fileID: 8300000, guid: 9b47661eaa51a9f47b31452dab85f765, type: 3}

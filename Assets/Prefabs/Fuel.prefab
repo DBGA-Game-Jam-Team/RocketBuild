@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillPercentage: 5
+  fuelClip: {fileID: 8300000, guid: 509a9bba6ba0b204b82ac8b075ffc1ef, type: 3}
 --- !u!61 &-6530008117834163845
 BoxCollider2D:
   m_ObjectHideFlags: 0
