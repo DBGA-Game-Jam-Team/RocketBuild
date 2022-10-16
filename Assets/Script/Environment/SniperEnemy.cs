@@ -9,7 +9,7 @@ public class SniperEnemy : AbsEnemy
     protected override void Shot() {
         if(weapon.gameObject.transform.position.y > Rocket.Instance.gameObject.transform.position.y) {
             weapon.gameObject.transform.up = (Rocket.Instance.transform.position - weapon.gameObject.transform.position).normalized;
-            weapon.GenericShot();
+            weapon.Shot();
         }
     }
     
