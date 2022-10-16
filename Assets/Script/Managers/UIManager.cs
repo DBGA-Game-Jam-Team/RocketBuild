@@ -27,7 +27,7 @@ public class UIManager : Singleton<UIManager>
 
     public void AnimateOutBuildPanel() {
         componentsPanel.GetComponent<Animator>().SetTrigger("PanelOut");
-        launchButton.SetActive(false);
+        launchButton.GetComponent<Animator>().SetTrigger("Launch");
     }
     public void HideBuildPanel() {
         componentsPanel.SetActive(false);
