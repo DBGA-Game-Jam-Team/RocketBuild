@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0479126, y: -0.00036621094}
+  m_AnchoredPosition: {x: -1.0478516, y: -0.00036621094}
   m_SizeDelta: {x: 17.9021, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &88780072
@@ -1990,7 +1990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -51.00006, y: 56}
+  m_AnchoredPosition: {x: -51, y: 56}
   m_SizeDelta: {x: 387.0468, y: 97.4505}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &438778331
@@ -5102,7 +5102,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0479126, y: -0.00036621094}
+  m_AnchoredPosition: {x: -1.0478516, y: -0.00036621094}
   m_SizeDelta: {x: 17.9021, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1113900651
@@ -5143,7 +5143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -51.00006, y: 56}
+  m_AnchoredPosition: {x: -51, y: 56}
   m_SizeDelta: {x: 387.0468, y: 97.4505}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1113900653
@@ -6136,7 +6136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0479126, y: -0.00036621094}
+  m_AnchoredPosition: {x: -1.0478516, y: -0.00036621094}
   m_SizeDelta: {x: 17.9021, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1317111435
@@ -6309,7 +6309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -495.17, y: -5.537781}
+  m_AnchoredPosition: {x: -495.16992, y: -5.537842}
   m_SizeDelta: {x: -990.37, y: -716.3081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381767936
@@ -6622,7 +6622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: each component will garant you different stats
+  m_text: build the rocket that best fits your play style!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
   m_sharedMaterial: {fileID: -5625656238668709750, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
@@ -7496,7 +7496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.0479126, y: -0.00036621094}
+  m_AnchoredPosition: {x: -1.0478516, y: -0.00036621094}
   m_SizeDelta: {x: 17.9021, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1610043553
@@ -9912,7 +9912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -51.00006, y: 56}
+  m_AnchoredPosition: {x: -51, y: 56}
   m_SizeDelta: {x: 387.0468, y: 97.4505}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &2098271750
