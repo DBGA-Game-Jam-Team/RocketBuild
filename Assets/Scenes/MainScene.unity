@@ -169,8 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 683722731555992220, guid: c13a90c5a73c34745bd16e26906938c3, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 0.8
+  maxCooldown: 1.6
 --- !u!1 &46189284
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,8 +818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 7759256625087329299, guid: 8eaf083408433ac43b7999cc0862ca9e, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 1
+  maxCooldown: 1.8
 --- !u!1 &257146361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,8 +1415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 7034160963021650244, guid: 84588112ea419cb4eace933dbc458f11, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 0.8
+  maxCooldown: 1.6
 --- !u!1 &487401765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 3889507091718860254, guid: 19fd8da46d942ba4d91bf372415764c3, type: 3}
   minCooldown: 0.8
-  maxCooldown: 1.8
+  maxCooldown: 1.5
 --- !u!1 &671348734
 GameObject:
   m_ObjectHideFlags: 3
@@ -2261,7 +2261,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 3889507091718860254, guid: 19fd8da46d942ba4d91bf372415764c3, type: 3}
   minCooldown: 0.8
-  maxCooldown: 1.8
+  maxCooldown: 1.5
 --- !u!1 &720855290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,8 +2659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 2113106208965380661, guid: b26c8c5735387f34eb0286bc1ef1b827, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 1
+  maxCooldown: 1.8
 --- !u!1 &869476064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,8 +3935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 2113106208965380661, guid: b26c8c5735387f34eb0286bc1ef1b827, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 0.8
+  maxCooldown: 1.6
 --- !u!1 &1159230289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,8 +4766,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 683722731555992220, guid: c13a90c5a73c34745bd16e26906938c3, type: 3}
-  minCooldown: 1
-  maxCooldown: 2
+  minCooldown: 0.5
+  maxCooldown: 1
 --- !u!1 &1382576745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,8 +4999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 7034160963021650244, guid: 84588112ea419cb4eace933dbc458f11, type: 3}
-  minCooldown: 1
-  maxCooldown: 2
+  minCooldown: 0.5
+  maxCooldown: 1
 --- !u!1 &1445410327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5740,8 +5740,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 7759256625087329299, guid: 8eaf083408433ac43b7999cc0862ca9e, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 0.8
+  maxCooldown: 1.6
 --- !u!1 &1635666245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,8 +6979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 387158921014095683, guid: c82e0f79d473fe84398fe4032f1422b4, type: 3}
-  minCooldown: 0.8
-  maxCooldown: 1.8
+  minCooldown: 0.5
+  maxCooldown: 1.2
 --- !u!1001 &1973275613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12122,8 +12122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 683722731555992220, guid: c13a90c5a73c34745bd16e26906938c3, type: 3}
-  minCooldown: 1.5
-  maxCooldown: 2.5
+  minCooldown: 1
+  maxCooldown: 1.8
 --- !u!1 &2022330293
 GameObject:
   m_ObjectHideFlags: 0
@@ -12307,7 +12307,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 3889507091718860254, guid: 19fd8da46d942ba4d91bf372415764c3, type: 3}
   minCooldown: 0.8
-  maxCooldown: 1.8
+  maxCooldown: 1.5
 --- !u!1 &2076766005
 GameObject:
   m_ObjectHideFlags: 0
@@ -12354,8 +12354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 7759256625087329299, guid: 8eaf083408433ac43b7999cc0862ca9e, type: 3}
-  minCooldown: 1
-  maxCooldown: 2
+  minCooldown: 0.5
+  maxCooldown: 1
 --- !u!1001 &2096931176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12560,8 +12560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefabs:
   - {fileID: 2113106208965380661, guid: b26c8c5735387f34eb0286bc1ef1b827, type: 3}
-  minCooldown: 1
-  maxCooldown: 2
+  minCooldown: 0.5
+  maxCooldown: 1
 --- !u!1 &2124354914
 GameObject:
   m_ObjectHideFlags: 0
@@ -12609,7 +12609,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 2113106208965380661, guid: b26c8c5735387f34eb0286bc1ef1b827, type: 3}
   minCooldown: 1
-  maxCooldown: 1.8
+  maxCooldown: 1.5
 --- !u!1001 &4908529409466764022
 PrefabInstance:
   m_ObjectHideFlags: 0
