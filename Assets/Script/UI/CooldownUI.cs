@@ -9,6 +9,7 @@ public class CooldownUI : MonoBehaviour
     private Slider slider;
 
     private float maxCD;
+    //private bool isInCD = false;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class CooldownUI : MonoBehaviour
     private IEnumerator DoCooldown()
     {
         float currentCD = 0;
+        slider.value = 0;
         while(currentCD < Rocket.Instance.Tip.Weapon.Cooldown)
         {
             currentCD += 0.01f;
