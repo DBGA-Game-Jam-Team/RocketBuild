@@ -339,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50179df06096ea446ae5fbe2e3029923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameoverClip: {fileID: 8300000, guid: 1288d6f2c93bda84f907c1c94acaf983, type: 3}
   rightMargin: {fileID: 1695666419}
   leftMargin: {fileID: 1649762671}
 --- !u!1 &204320095
@@ -7209,7 +7210,6 @@ MonoBehaviour:
   life: 0
   launchClip: {fileID: 8300000, guid: 0479ada493daa8949b19d7ba63865483, type: 3}
   damageClip: {fileID: 8300000, guid: 135a3dc687e6e1742bcff85de4440137, type: 3}
-  shotClip: {fileID: 8300000, guid: 9b47661eaa51a9f47b31452dab85f765, type: 3}
 --- !u!199 &1991069091
 ParticleSystemRenderer:
   serializedVersion: 6
