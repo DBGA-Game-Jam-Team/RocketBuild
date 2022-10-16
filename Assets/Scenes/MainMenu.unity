@@ -7217,7 +7217,7 @@ GameObject:
   - component: {fileID: 1450553008}
   - component: {fileID: 1450553007}
   m_Layer: 5
-  m_Name: space cadect text
+  m_Name: CreditText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7263,7 +7263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: space cadect
+  m_text: Space cadets
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
   m_sharedMaterial: {fileID: -5625656238668709750, guid: c55227df885b5a742a589a1ca02c5d90, type: 2}
