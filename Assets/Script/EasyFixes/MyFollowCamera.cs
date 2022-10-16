@@ -5,8 +5,7 @@ using UnityEngine;
 public class MyFollowCamera : MonoBehaviour
 {
     [SerializeField] Transform player;
-    //[SerializeField] float offset = 5f;
-    float offset = 5f;//delete
+    [SerializeField] float offset = 5f;
 
     // Start is called before the first frame update
     void Start()
