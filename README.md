@@ -7,7 +7,7 @@ This game was made during the DBGA Game Jam (2 days).
 
 <img src="https://github.com/DBGA-Game-Jam-Team/Game-DBGA-Jam/blob/main/Screenshots/rocket_menu.png" width="750">
 
-## The game and the Gameplay
+## The game and the gameplay
 
 Build the rocket that best fits your game style and launch it towards the stars! The game is divided into two phases:
 
