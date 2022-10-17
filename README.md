@@ -3,7 +3,7 @@
 
 **RocketBuild** is an action shooter game where you have to assembly your perfect rocket!
 
-This game was made during the DBGA Game Jam (2 days).
+This game was made during the **DBGA Game Jam** (2 days).
 
 <img src="https://github.com/DBGA-Game-Jam-Team/Game-DBGA-Jam/blob/main/Screenshots/rocket_menu.png" width="750">
 
